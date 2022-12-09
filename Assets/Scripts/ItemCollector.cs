@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private bool phoneCollected = false;
-    [SerializeField] private Text phoneText;
+    [SerializeField] private Text sheepText;
+
+    [SerializeField] private Text heartText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Phone"))
+        if (collision.gameObject.CompareTag("Sheep"))
         {
             Destroy(collision.gameObject);
-            phoneCollected = true;
-            phoneText.text = "Phone Collected: Yes";
+            sheepText.text = "Favorite Plushy Collected: Yes";
+        }
+        
+        if (collision.gameObject.CompareTag("Heart"))
+        {
+            Destroy(collision.gameObject);
+            heartText.text = "Love and Care Collected: Yes";
         }
     }
 }

@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start Scene.unity
+    guid: 60e696b7ea54fe84ba4b716240a7f8d6
+  - enabled: 1
+    path: Assets/Scenes/Anxiety Level 1.unity
+    guid: 3dcf770654286fc46807b3ba512bcae6
+  - enabled: 1
+    path: Assets/Scenes/Anxiety Clear.unity
+    guid: 53dde464afd3ceb44bd46161887477df
+  - enabled: 1
+    path: Assets/Scenes/Depression Level.unity
+    guid: ce032761ad6b92742b1b42e03c66a0b4
+  - enabled: 1
+    path: Assets/Scenes/Depression Clear 1.unity
+    guid: 98f835e27314bd54384b5fe5dba1ea42
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: dbefc425d5683674ca6bce5ea2a4125c
   m_configObjects: {}

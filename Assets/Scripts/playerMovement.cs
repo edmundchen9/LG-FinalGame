@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 7f;
     [SerializeField] private LayerMask jumpGround;
+    [SerializeField] private float sprint = 7.5f;
 
     // Start is called before the first frame update
     private void Start()
@@ -26,6 +27,10 @@ public class playerMovement : MonoBehaviour
     {
         float dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb.velocity = new Vector2(dirX * sprint, rb.velocity.y);
+        }
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
